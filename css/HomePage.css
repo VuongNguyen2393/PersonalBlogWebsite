@@ -1,12 +1,13 @@
 .container{
     display:grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: 100px 300px 1fr;
+    grid-template-columns: 150px repeat(3,1fr);
+    grid-template-rows: auto auto auto;
     grid-template-areas: 
     "hd hd hd hd hd hd hd hd"
     "sb ct ct ct ct ct ct ct"
     "ft ft ft ft ft ft ft ft";
-    padding: 50px;
+    padding-left: 50px;
+    gap: 20px;
 }
 
 .main{
@@ -16,24 +17,42 @@
     gap: 30px;
 }
 
-#follow{
-    background-color: aqua;
-    color: white;
-    border: 2px solid aqua;
-    border-radius: 2px;
-}
-
-#subcribe{
+.pageButton{
     background-color: white;
     border: 2px solid aqua;
     color: aqua;
     border-radius:  2px;
 }
 
+.articalButton{
+    background-color: white;
+    border: 2px solid red;
+    color: black;
+    border-radius: 2px;
+    padding: 2px;
+}
+
+.articalButton:hover{
+    background-color: red;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+}
+
+.pageButton:hover{
+    background-color: aqua;
+    border: 2px solid aqua;
+    color: white;
+    border-radius:  2px;
+}
+
 .box_main{
-    height: 200px;
-    width: 150px;
-    background-color: darkgray;
+    height: 500px;
+    width: auto;
+    background-color: whitesmoke;
+    padding: 10px;
 }
 
 .header{
@@ -56,5 +75,11 @@
 }
 
 .footer{
+    display: flex;
     grid-area: ft;
+    background-color: grey;
+    color: white;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
 }
