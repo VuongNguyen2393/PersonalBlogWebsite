@@ -77,7 +77,7 @@ a{
     padding: 10px;
 }
 
-.header{
+header{
     grid-area: hd;
     font-size: 25px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -96,7 +96,7 @@ a{
     grid-area: ct;
 }
 
-.footer{
+footer{
     display: flex;
     grid-area: ft;
     background-color: grey;

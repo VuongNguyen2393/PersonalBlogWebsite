@@ -1,4 +1,4 @@
-.container{
+.containerBlogPost{
     display: grid;
     grid-template-rows: 30px 50px 150px 1fr;
     grid-gap: 20px;
@@ -9,14 +9,24 @@
     "main";
 }
 
-#authorImg{
-    border-radius: 100%;
-}
-
 .author{
     display: flex;
     flex-direction: row;
     gap: 20px;
+}
+
+.authorInfor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    line-height: 1px;
+}
+
+.social{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
 }
 
 .headerButton{
