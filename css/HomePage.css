@@ -1,7 +1,19 @@
 .container{
     display:grid;
     grid-template-columns: repeat(4,1fr);
-    grid-template-rows: repeat(3,1fr);
+    grid-template-rows: 100px 300px 1fr;
+    grid-template-areas: 
+    "hd hd hd hd hd hd hd hd"
+    "sb ct ct ct ct ct ct ct"
+    "ft ft ft ft ft ft ft ft";
+    padding: 50px;
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 30px;
 }
 
 #follow{
@@ -16,4 +28,33 @@
     border: 2px solid aqua;
     color: aqua;
     border-radius:  2px;
+}
+
+.box_main{
+    height: 200px;
+    width: 150px;
+    background-color: darkgray;
+}
+
+.header{
+    grid-area: hd;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.sidebar{
+    grid-area: sb;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: flex-start;
+    gap: 10px
+}
+
+.content{
+    grid-area: ct;
+}
+
+.footer{
+    grid-area: ft;
 }
