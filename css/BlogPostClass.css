@@ -1,12 +1,6 @@
 .containerBlogPost{
-    display: grid;
-    grid-template-rows: 30px 50px 150px 1fr;
-    grid-gap: 20px;
-    grid-template-areas: 
-    "hd"
-    "tt"
-    "at"
-    "main";
+    display: flex;
+    flex-direction: column;
 }
 
 .author{
@@ -31,7 +25,6 @@
 
 .headerButton{
     display: flex;
-    grid-area: hd;
     background-color: white;
     color: aqua;
     border: 2px solid aqua;
@@ -46,14 +39,6 @@
     color: white;
 }
 
-.title{
-    grid-area: tt;
-}
-
-.author{
-    grid-area: at;
-}
-
-.content{
-    grid-area: main;
+.contentPost h2{
+    color: rebeccapurple;
 }

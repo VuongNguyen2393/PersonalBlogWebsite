@@ -82,3 +82,7 @@ footer{
     align-items: center;
     justify-content: center;
 }
+
+#greeting {
+    color: blueviolet;
+}
